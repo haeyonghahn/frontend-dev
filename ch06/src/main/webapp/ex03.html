@@ -12,10 +12,25 @@
 3.string
 4.undefined
 
-[object 타입: new 생성자 함수를 사용해서 object 타입 객체를 생성, Wrapper 객체를 생성]
-Number();
-Boolen();
-String();
+[객체: new 생성자 함수를 사용해서 객체를 생성]
+Number()   -> object type의 객체 생성 
+Boolen()   -> object type의 객체 생성 
+String()   -> object type의 객체 생성 
+Function() -> function type의 객체 생성 
+Object()   -> object type의 객체 생성 
+Array()    -> object type의 객체 생성 
+
+
+자바스크립트의 객체를 구분하는 또다른 방법
+1. 내장(Built-In, Native)객체 (자바스크립트 엔진 안에 미리 정의되어 있는 객체)
+   Number, Boolean, Date, RegEx... 과 같은 생성자 함수...
+   parseInt(), setTimeout, setInterval 와 같은 일반 함수들~
+   window 객체
+2. 호스트 객체
+      자바스크립트가 접근하는 브라우저의 객체
+   document, location, XmlHttpRequest....   
+3. 사용자 객체
+      자바스크립트 코드가 엔진에 의해 실행되면서 생성되는 객체들
 */
 
 
@@ -61,7 +76,6 @@ console.log(s + s2);
 // 원시타입에 메소드가 호출 될 때 임시 객체가 만들어 져서 메소드르 호출한 다음에 사라진다.
 console.log(b.valueOf()); 
 console.log(b2.valueOf());
-
 
 </script>
 </head>
