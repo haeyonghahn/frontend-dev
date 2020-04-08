@@ -25,7 +25,7 @@ JavaScript 이벤트 종류
               문제점이 이벤트 처리 핸들러를 하나밖에 세팅 못하다는 단점.
    	 
    - DOM Event Model Level2
-     - Microsoft Internet Explorer : attachEvent, detachEvent  
+     - Microsoft Internet Explorer(<=8): attachEvent, detachEvent  
      - Standard Event Mode : addEventListener, removeEventListener 
 */
 window.addEventListener("load", function(){
@@ -36,16 +36,6 @@ window.addEventListener("load", function(){
 	document.getElementById("header-2").addEventListener("click", function(){
 		console.log("Event Model2")
 	});
-	
-	document.getElementById("header-2").addEventListener("click", function(){
-		console.log("Event Model2!!!")
-	});
-	
-	document.getElementById("header-2").addEventListener("click", function(){
-		console.log("Event Model2!!!!!!!!!!");
-	});
-	
-	
 });
 
 
