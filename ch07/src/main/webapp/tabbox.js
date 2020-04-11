@@ -7,9 +7,10 @@ var TabBox = {
 	},	
 	_onTabClicked: function(){
 		//unselect
-		var $liSelecetds = $('.selected');
-		if($liSelecetds.length == 1) {
-			$liSelecetds.removeClass('selected');
+		var liSelecetds = $('.selected');
+		
+		if(liSelecetds.length == 1) {
+			liSelecetds.removeClass('selected');
 		}		
 
 		// seclect
