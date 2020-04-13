@@ -1,16 +1,17 @@
 // jQuery 버젼
 var TabBox = {
 	init: function(){
-		$(function() {
-			$('.tab-box ul li').click(TabBox._onTabClicked);
-		});		
+		$(this._init);		
 	},	
-	_onTabClicked: function(){
-		//unselect
+	_init: function(){
+		$('.tab-box li').click(TabBox._changeTab);
+		TabBox._changeTab();
+	},
+	_changeTab: function(){
 		$('.tab-box li.selected').removeClass('selected');
 		
-		// seclect
-		$(this).addClass('selected');
-		$('.tab-box div').text($(this).text() + " 탭뷰입니다.");
+		var $liTab = (this == TabBox) ?	$('.tab-box li:first-child') : $(this);
+		$('.tab-box div').text($liTab.data('no') + "의 탭뷰입니다.");
+		$liTab.addClass('selected');
 	}	
 }
