@@ -7,12 +7,8 @@ var TabBox = {
 	},	
 	_onTabClicked: function(){
 		//unselect
-		var liSelecetds = $('.selected');
+		$('.tab-box li.selected').removeClass('selected');
 		
-		if(liSelecetds.length == 1) {
-			liSelecetds.removeClass('selected');
-		}		
-
 		// seclect
 		$(this).addClass('selected');
 		$('.tab-box div').text($(this).text() + " 탭뷰입니다.");
