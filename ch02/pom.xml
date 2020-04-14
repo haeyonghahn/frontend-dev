@@ -19,6 +19,17 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
+			
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>tomcat-maven-plugin</artifactId>
+				<configuration>
+					<url>http://192.168.1.104:8080/manager/text</url>
+					<path>/ch02</path>
+					<username>admin</username>
+					<password>admin</password>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>
